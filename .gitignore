@@ -42,3 +42,21 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# --- Entornos y Secretos (VITAL para CI/CD)
+.env
+.env.*
+!.env.example
+
+# Si usas el sistema tradicional de Angular para entornos
+src/environments/environment.prod.ts
+
+# --- Docker ---
+.docker/
+docker-compose.override.yml
+*.tar
+
+# --- Native Federation ---
+# Estos archivos se generan dinámicamente y no deben estar en el repo
+public/remoteEntry.json
+

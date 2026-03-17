@@ -1,12 +1,22 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Button } from 'primeng/button';
+import { ThemeService } from './core/services/theme.service';
+import { LoaderComponent } from './shared/components/loader/loader';
+import { HttpClient } from '@angular/common/http';
+import { delay } from 'rxjs';
+import { Toast } from 'primeng/toast';
+import { ConfirmDialog } from 'primeng/confirmdialog';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, LoaderComponent, Toast, ConfirmDialog, Button],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('security-shell');
+  public themeService = inject(ThemeService);
+  public toggleDarkMode() {
+    this.themeService.toggleTheme();
+  }
 }

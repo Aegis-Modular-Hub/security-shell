@@ -1,0 +1,73 @@
+export const labels = Object.freeze({
+  httpMethod: 'Método HTTP',
+  name: 'Nombre',
+  route: 'Ruta',
+  url: 'URL',
+  nodeType: 'Tipo',
+  icon: 'Icono',
+  visible: 'Visibilidad',
+  description: 'Descripción',
+  accessories: 'Accesorios',
+  accountNumber: 'Número de cuenta',
+  active: '¿Activo?',
+  assignmentStatus: 'Estado de asignación',
+  assignmentTypeCode: 'Código de tipo de asignación',
+  code: 'Código',
+  logicalOrder: 'Orden lógico',
+  username: 'Nombre de usuario',
+  email: 'Email',
+  role: 'Rol',
+  roles: 'Roles',
+  permissions: 'Permisos',
+  activeSystem: '¿Sistema activo?',
+  searchPerson: 'Buscar persona',
+  personFullName: 'Nombre completo',
+  login: 'Inicio de Sesión',
+  address: 'Dirección',
+  searchPermissions: 'Buscar permisos',
+  password: 'Contraseña',
+  confirmPassword: 'Confirmar contraseña',
+  systems: 'Sistemas',
+  createdAt: 'Creado en',
+  createdBy: 'Creado por',
+  updatedAt: 'Actualizado en',
+  updatedBy: 'Actualizado por',
+  searchRole: 'Buscar Rol',
+  currentPassword: 'Contraseña actual',
+  newPassword: 'Nueva contraseña',
+  yes: 'Si',
+  no: 'No',
+} as const);
+
+export const placeholders = Object.freeze({
+  select: 'Seleccione una opción',
+  search: 'Buscar',
+  filter: 'Ingrese texto para filtrar',
+  selectColumns: 'Seleccione las columnas',
+  searchOnCurrentView: 'Buscar en la vista actual',
+  inputSearchMessage: 'Ingrese 3 o más caracteres para buscar',
+  filterInputSearchMessage: 'Ingrese 3 o más caracteres para empezar la búsqueda',
+} as const);
+
+export const buttons = Object.freeze({
+  generate: 'Generar',
+  download: 'Descargar',
+  cancel: 'Cancelar',
+  save: 'Guardar',
+  approve: 'Aprobar',
+  reject: 'Rechazar',
+  savePlusNew: 'Guardar y Nuevo',
+  clear: 'Limpiar',
+} as const);
+
+export const tooltips = Object.freeze({
+  reload: 'Recargar',
+  clear: 'Limpiar',
+  create: 'Crear',
+  edit: 'Editar',
+  delete: 'Eliminar',
+  information: 'Información',
+  addPermissions: 'Agregar Permisos',
+  addRoles: 'Agregar Roles'
+} as const);
+
